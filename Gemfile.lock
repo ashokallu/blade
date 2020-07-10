@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/rails/web-console.git
-  revision: b18a195183f82a6480629a115895a6737de5c4a5
+  revision: eeaf8473d9706999b11b381a0637574f3e603b9d
   specs:
-    web-console (4.0.3)
+    web-console (4.0.4)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: bf278f9787704ed0f78038ad7d36c008abc2edfd
+  revision: b2a1fd4e29ce401df5928476e35b9743bd2fcf5d
   specs:
     webpacker (5.1.1)
       activesupport (>= 5.2)
@@ -73,6 +73,7 @@ PATH
       activerecord (= 6.1.0.alpha)
       activesupport (= 6.1.0.alpha)
       marcel (~> 0.3.1)
+      mimemagic (~> 0.3.2)
     activesupport (6.1.0.alpha)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
@@ -91,7 +92,7 @@ PATH
       activerecord (= 6.1.0.alpha)
       activestorage (= 6.1.0.alpha)
       activesupport (= 6.1.0.alpha)
-      bundler (>= 1.3.0)
+      bundler (>= 1.15.0)
       railties (= 6.1.0.alpha)
       sprockets-rails (>= 2.0.0)
     railties (6.1.0.alpha)
@@ -107,7 +108,7 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     bindex (0.8.1)
-    bootsnap (1.4.6)
+    bootsnap (1.4.8)
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.3)
@@ -120,20 +121,20 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     childprocess (3.0.0)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     crass (1.0.6)
     erubi (1.9.0)
     ffi (1.13.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    i18n (1.8.3)
+    i18n (1.8.5)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.10.0)
+    jbuilder (2.10.1)
       activesupport (>= 5.0.0)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.6.0)
+    loofah (2.7.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -144,17 +145,17 @@ GEM
     mimemagic (0.3.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
-    minitest (5.14.1)
+    minitest (5.14.2)
     msgpack (1.3.3)
-    nio4r (2.5.2)
+    nio4r (2.5.4)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     pg (1.2.3)
-    public_suffix (4.0.5)
-    puma (4.3.5)
+    public_suffix (4.0.6)
+    puma (4.3.6)
       nio4r (~> 2.0)
     rack (2.2.3)
-    rack-mini-profiler (2.0.2)
+    rack-mini-profiler (2.1.0)
       rack (>= 1.2.0)
     rack-proxy (0.6.5)
       rack
@@ -169,8 +170,8 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    redis (4.2.1)
-    regexp_parser (1.7.1)
+    redis (4.2.2)
+    regexp_parser (1.8.2)
     rubyzip (2.3.0)
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
@@ -183,11 +184,11 @@ GEM
       actionpack (>= 3.1)
       railties (>= 3.1)
       slim (>= 3.0, < 5.0)
-    spring (2.1.0)
+    spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.2.1)
+    sprockets-rails (3.2.2)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
@@ -205,7 +206,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.3.1)
+    zeitwerk (2.4.0)
 
 PLATFORMS
   ruby
@@ -229,7 +230,7 @@ DEPENDENCIES
   webpacker!
 
 RUBY VERSION
-   ruby 2.7.0p0
+   ruby 2.7.1p83
 
 BUNDLED WITH
    2.1.4
