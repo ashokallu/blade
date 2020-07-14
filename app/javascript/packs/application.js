@@ -7,6 +7,14 @@ import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+// The importing of .sass files into ESM modules is handled in webpack by loaders, the 'sass-loader', followed by 'postcss-loader', followed by 'css-loader', followed by 'mini-css-extract-plugin' plugin.
+// If 'extract_css' property of ./config/webpacker.yml file is set to true, then, the CSS markup generated from this import is added to 'application.css' file in the 'css' folder of the 'public_output_path' property of ./config/webpacker.yml file, and then you can give the relative path of the 'application.css' file to 'stylesheet_pack_tag' helper method, which will serve the extracted CSS markup to the browser.
+//
+// In a node console that started in the root path of the Rails project, execute the following commands to find the configuration of webpack to process files of /\.(scss|sass)(\.erb)?$/i extension imported into ESM modules.
+// const { environment } = require('@rails/webpacker');
+// environment.loaders.get('sass')
+import '../../styles/mystyles.scss'
+
 Rails.start()
 ActiveStorage.start()
 

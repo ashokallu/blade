@@ -17,7 +17,11 @@ default: &default
   cache_manifest: false
 
   # Extract and emit a css file
-  extract_css: false
+  # extract_css: false
+  # By default Webpacker only generates Javascript files, but we need to add CSS support as well, and if the 'extract_css' property is set to true, and if a ESM module has CSS markup imported in it, then, we can give the bundle built from the ESM module as an argument to 'stylesheet_pack_tag' helper method.
+  # The 'extract_css' property will extract CSS markup of a ESM module into a same file name as the final module, but stores it with the .css file extension in the 'css' folder of 'public_root_path' property, and this relative path of .css file can be given as argument to 'stylesheet_pack_tag' helper method, and then this method will serve the .css file to the browser.
+  # A stylesheet can be imported into a .js file, and this is hanlded by Rails by default by loaders configured by webpacker gem, in that case, if 'extract_css' is set to false, which is the default value for 'development' environment, you just give the bundle as argument to only 'javascript_pack_tag', and this file will only have the markup that is the dependency of this module, and the CSS markup of a bundle is added to the web page by Javascript such that the CSS markup is added to style element in the head element of the web page in which the bundle is referenced, but, if you set 'extract_css' to true, the .css is extracted to another .css file with the same name, but with .css file extension, in the 'css' folder of 'public_root_path' property of webpacker.yml file, and in that case, you can give the same bundle name as the argument to both 'javascript_pack_tag' and 'stylesheet_pack_tag' helper methods, which will load the .js and .css extracted from the bundle.
+  extract_css: true
 
   static_assets_extensions:
     - .jpg
