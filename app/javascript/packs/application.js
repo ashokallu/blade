@@ -7,6 +7,13 @@ import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+import 'materialize-css'
+
+// You can import '.css' or '.scss' files that are distributed with some npm packages that are in 'node_modules' of the project. In this case, you must explicitly specify the file extension like .css or .scss or .sass file that you want to import into .js modules.
+// import 'materialize-css/dist/css/materialize.css' // This is directly importing of .css file from 'node_modules'
+//
+import '../../styles/mystyles.scss'
+
 Rails.start()
 ActiveStorage.start()
 
