@@ -1,1 +1,25 @@
-@import 'bootstrap/scss/bootstrap'
+// https://webpack.js.org/concepts/module-resolution/
+// https://github.com/webpack-contrib/sass-loader#resolving-import-at-rules.
+//
+// The 'sass-loader' loader uses Sass's custom importer feature to pass all queries to the Webpack resolving engine. Thus you can import your Sass modules from inside of npm packages that have .scss or .sass files that are in 'node_modules'. Just prepend the .scss or .sass file to be imported with a tilde ~ to tell Webpack that this is not a relative import.
+// It's important to only prepend it with tilde '~', because tilde followed by a forward slash (/), '~/' resolves to the home directory.
+// Webpack needs to distinguish between 'bootstrap' and '~bootstrap' because CSS and Sass files have no special syntax for importing relative files. Writing @import "style.scss" is the same as @import "./style.scss";
+
+// A tilde '~' is optional here.
+@import '~bootstrap/scss/bootstrap';
+// @import 'bootstrap/scss/bootstrap';
+
+// tilde is necessary in this case, or else the path is getting resolved to the current directory of this file, which is "/home/ubuntu/work/blade/app/styles" appended with the '$fa-font-path' path, and the fonts are being searched in this path, if you provide tilde, then, the tilde '~' is resolved to 'node_modules' path, and to this path '$fa-font-path' is appended and fonts are searched from this path.
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+
+// https://stackoverflow.com/a/59358030/9100537
+// https://stackoverflow.com/questions/33649761/how-do-i-load-font-awesome-using-scss-sass-in-webpack-using-relative-paths
+// $fa-font-path: "~@fortawesome/fontawesome-free/webfonts/";
+// @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+// @import '~@fortawesome/fontawesome-free/scss/solid.scss';
+// @import '~@fortawesome/fontawesome-free/scss/brands.scss';
+// @import '~@fortawesome/fontawesome-free/scss/regular.scss';

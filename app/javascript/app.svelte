@@ -22,3 +22,11 @@
 
   <button type="button" class="btn btn-link">Link</button>
 </div>
+
+<!-- Load icons from the url below which is the url for font awesome v5 icons -->
+<!-- https://fontawesome.com/icons?d=gallery&m=free -->
+<span style="font-size: 2.5em; color: Red;">
+  <i class="fa fa-address-book" aria-hidden="true"></i>
+  <i class="fas fa-arrow-circle-down"></i>
+  <i class="far fa-address-card"></i>
+</span>
