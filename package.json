@@ -7,7 +7,9 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.0.0",
     "svelte": "^3.24.0",
-    "svelte-loader": "^2.13.6"
+    "svelte-loader": "^2.13.6",
+    "svelte-preprocess": "^4.0.8",
+    "uikit": "^3.5.5"
   },
   "version": "0.1.0",
   "devDependencies": {
