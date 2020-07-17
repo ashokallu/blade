@@ -6,8 +6,10 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.0.0",
+    "spectre.css": "^0.5.9",
     "svelte": "^3.24.0",
-    "svelte-loader": "^2.13.6"
+    "svelte-loader": "^2.13.6",
+    "svelte-preprocess": "^4.0.8"
   },
   "version": "0.1.0",
   "devDependencies": {
