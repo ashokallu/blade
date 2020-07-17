@@ -1,0 +1,5 @@
+/*******************************
+     User Global Variables
+*******************************/
+@fontPath: "/home/ubuntu/work/blade/semantic/dist/themes/default/assets/fonts";
+@imagePath: "/home/ubuntu/work/blade/semantic/dist/themes/default/assets/images";

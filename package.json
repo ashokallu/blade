@@ -6,8 +6,13 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.0.0",
+    "expose-loader": "^1.0.0",
+    "fomantic-ui": "^2.8.7-beta.29",
+    "jquery": "^3.5.1",
     "svelte": "^3.24.0",
-    "svelte-loader": "^2.13.6"
+    "svelte-loader": "^2.13.6",
+    "svelte-preprocess": "^4.0.8",
+    "url-loader": "^4.1.0"
   },
   "version": "0.1.0",
   "devDependencies": {
