@@ -1,0 +1,4 @@
+// unable to load .css file into .scss file, so had to fallback to src file only which is .scss file.
+// You can import .scss file from 'node_modules' by prefixing with a tilde '~', and its optional.
+@import "~mdb-ui-kit/src/scss/mdb.free.scss";
+// @import "mdb-ui-kit/src/scss/mdb.free.scss"; // correct // tilde '~' is optional
