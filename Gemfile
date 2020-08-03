@@ -49,6 +49,7 @@ group :development do
   gem 'redis-rails'
   gem 'awesome_print', '2.0.0.pre2'
   gem "nokogiri"
+  gem 'noticed'
 end
 
 group :test do
