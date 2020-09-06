@@ -7,7 +7,7 @@ import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-import 'bootstrap'
+window.bootstrap = require('bootstrap')
 import '@fortawesome/fontawesome-free'
 
 // https://github.com/webpack-contrib/sass-loader#extracts-css-into-separate-files
