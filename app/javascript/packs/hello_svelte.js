@@ -5,10 +5,11 @@
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Svelte!</div> at the bottom of the page.
 
-import App from '../app.svelte'
+// import App from '../app.svelte'
+import Grid from '../grid.svelte'
 
 document.addEventListener('DOMContentLoaded', () => {
-  const app = new App({
+  const app = new Grid({
     target: document.body,
     props: {
       name: 'Svelte'
