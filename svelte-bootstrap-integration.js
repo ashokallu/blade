@@ -2,9 +2,9 @@
 
 $ yarn add bootstrap@next
 
-$ yarn add popper.js
+// $ yarn add popper.js
 // warning popper.js@1.16.1: You can find the new Popper v2 at @popperjs/core, this package is dedicated to the legacy v1
-// yarn add @popperjs/core
+$ yarn add "@popperjs/core@latest" // remove quotes, like this, yarn add @popperjs/core@latest
 
 
 $ yarn add svelte-preprocess
