@@ -8,7 +8,8 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 import "mdb-ui-kit"
-import '../../styles/mystyles.scss'
+// import '../../styles/mystyles.scss'
+import 'mystyles.scss'
 
 
 Rails.start()

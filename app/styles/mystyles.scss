@@ -1,4 +1,12 @@
 // unable to load .css file into .scss file, so had to fallback to src file only which is .scss file.
 // You can import .scss file from 'node_modules' by prefixing with a tilde '~', and its optional.
+@import "~mdb-ui-kit/src/scss/mdb.core.scss";
 @import "~mdb-ui-kit/src/scss/mdb.free.scss";
+
+// https://sass-lang.com/documentation/at-rules/import#importing-css
+// It is now possible to import css files directly into your sass file.
+// The syntax is the same as now - @import "your/path/to/the/file", without an extension after the file name. This will import your file directly. If you append *.css at the end, it will translate into the css rule @import url(...).
+// In addition to importing .sass and .scss files, Sass can import plain old .css files. The only rule is that the import must not explicitly include the .css extension, because that’s used to indicate a plain CSS @import.
+// For libsass (C/C++ implementation), import works for *.css the same way as for *.scss files. just omit the .css extension
+// @import '~mdb-ui-kit/css/mdb.min.css';
 // @import "mdb-ui-kit/src/scss/mdb.free.scss"; // correct // tilde '~' is optional
