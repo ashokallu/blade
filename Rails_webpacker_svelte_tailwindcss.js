@@ -53,7 +53,6 @@ module.exports = {
 
 // stylesheet_pack_tag helper method
 /*
-  
 */
 
 // rails-webpack-sass

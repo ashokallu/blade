@@ -1,4 +1,8 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// https://stackoverflow.com/a/55607208/9100537
+// https://stackoverflow.com/a/58186289/9100537
+
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   plugins: [new MiniCssExtractPlugin()],
@@ -15,9 +19,23 @@ module.exports = {
           // Creates `style` nodes from JS strings
           // "style-loader",
           // Translates CSS into CommonJS
-          "css-loader",
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 1
+            },
+          },
+          //
+          "postcss-loader",
           // Compiles Sass to CSS
-          "sass-loader",
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                plugins: () => [autoprefixer()]
+              },
+            },
+          },
         ],
       },
     ],

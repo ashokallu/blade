@@ -13,7 +13,9 @@ import "channels"
 // In a node console that started in the root path of the Rails project, execute the following commands to find the configuration of webpack to process files of /\.(scss|sass)(\.erb)?$/i extension imported into ESM modules.
 // const { environment } = require('@rails/webpacker');
 // environment.loaders.get('sass')
-import '../../styles/styles.scss'
+// import '../../styles/styles.scss'
+// import '../../styles/styles.css'
+import 'styles.scss'
 
 Rails.start()
 ActiveStorage.start()

@@ -12,6 +12,7 @@
 
 <div class="container" style="border: 1px solid red; float: left;">
   <h1 class="font-bold">Hello {name}!</h1>
+  <h2 class="font-bold">Hello {name}!</h2>
 </div>
 
 <div>
