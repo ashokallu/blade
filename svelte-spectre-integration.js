@@ -1,2 +1,2 @@
-$ yarn add spectre.css
+$ yarn add spectre.css@next
 $ yarn add svelte-preprocess
