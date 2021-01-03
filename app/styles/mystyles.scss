@@ -2,7 +2,8 @@
 // For libsass (C/C++ implementation), @import directive of .scss files works for *.css the same way as for *.scss files, just omit the .css extension.
 // The syntax is the same as now - @import "your/path/to/the/file", without an extension after the file name. This will import your file directly. If you append *.css at the end, it will translate into the css rule @import url(...).
 // @import "path/to/file"; // This will import path/to/file.css.
-@import '~materialize-css/dist/css/materialize';
+// @import '~materialize-css/dist/css/materialize';
+@import '~materialize-css/sass/materialize';
 
 // https://www.npmjs.com/package/material-icons
 @import 'material-icons';
