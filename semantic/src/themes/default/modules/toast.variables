@@ -12,11 +12,13 @@
 @toastMarginBottom: -0.01em;
 @toastLeftRightMargin: 1px;
 @toastBoxMarginBottom: 0.5em;
+@toastBoxMarginRight: @toastBoxMarginBottom;
 @toastMarginProgress: -0.2em;
 @toastMargin: 0 -@toastLeftRightMargin @toastMarginBottom;
 @toastTextColor: @invertedTextColor;
 @toastInvertedTextColor: @textColor;
 @toastNeutralTextColor: @textColor;
+@toastAttachedMargin: 1px;
 
 /* Mobile */
 @mobileToastBreakpoint: 420px;
@@ -81,3 +83,4 @@
 @toastActionMarginBottom: 0.3em;
 @toastActionPadding: 0.5em;
 @toastActionPaddingBottom: 0.75em;
+@toastActionCenteredMargin: 0.25em;

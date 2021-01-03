@@ -8,9 +8,10 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 // Fomantic UI JS and CSS files
-import $ from "jquery"
+// import $ from "jquery"
 import "../../../semantic/dist/semantic"
-import "../../styles/mystyles.scss"
+import "../../../semantic/dist/semantic.css"
+// import "mystyles.scss"
 
 Rails.start()
 ActiveStorage.start()
