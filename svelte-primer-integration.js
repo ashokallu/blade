@@ -1,5 +1,5 @@
-$ yarn add '@primer/css'
-$ yarn add svelte-preprocess
+$ yarn add '@primer/css@next' // remove quoutes, yarn add @primer/css@next
+$ yarn add svelte-preprocess@next
 
 // Error: ENOENT: no such file or directory, scandir '/home/ubuntu/work/blade/node_modules/node-sass/vendor'
 // https://stackoverflow.com/a/60650490
