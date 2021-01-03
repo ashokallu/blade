@@ -1,0 +1,11 @@
+const { webpackConfig } = require('@rails/webpacker')
+const { merge } = require('webpack-merge')
+const svelteLoader = require('./rules/svelte')
+const sassLoader = require('./rules/sassLoader')
+const fileLoader = require('./rules/fileLoader')
+const urlLoader = require('./rules/urlLoader')
+const cssLoader = require('./rules/cssLoader')
+
+module.exports = merge(webpackConfig, svelteLoader, sassLoader, fileLoader)
+// module.exports = merge(webpackConfig, svelteLoader, fileLoader, urlLoader)
+// module.exports = merge(webpackConfig, svelteLoader, cssLoader)

@@ -7,7 +7,9 @@ import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-import "../../styles/mystyles.scss"
+// import "@primer/octicons"
+import "mystyles.scss"
+// import "mystyles.css"
 
 Rails.start()
 ActiveStorage.start()
