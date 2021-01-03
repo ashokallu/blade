@@ -15,6 +15,7 @@ import 'materialize-css/dist/js/materialize'
 //
 // import 'mystyles.scss'
 import 'mystyles.css'
+// import 'material-icons-fonts.scss'
 
 Rails.start()
 ActiveStorage.start()
