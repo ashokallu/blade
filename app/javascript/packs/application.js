@@ -8,7 +8,8 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 import '../uikit'
-import '../../styles/mystyles.css'
+// import 'mystyles.css'
+import 'mystyles.scss'
 
 Rails.start()
 ActiveStorage.start()
