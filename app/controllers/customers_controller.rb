@@ -2,8 +2,8 @@ class CustomersController < ApplicationController
   protect_from_forgery except: :index
 
   def index
-    binding.pry
-    head 400 and return
+    # binding.pry
+    # head 400 and return
     res = {"message"=>"Device Registered Successfully", "status"=>1}
     render json: res
     # render json: {foo: 100, bar: 200}
