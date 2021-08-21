@@ -42,7 +42,7 @@ $ ./bin/webpack-dev-server // webpack-dev-server.js executable
 // In development, Webpacker compiles on demand rather than upfront by default. This happens when you refer to any of the pack assets using the Webpacker helper methods. This means that you don't have to run any separate processes. Compilation errors are logged to the standard Rails log.
 
 // on-demand compilation means when the request for asset comes from the webpacker helper method calls which are referenced from the view pages.
-// live code reloading happeds when you start the webpack development server, which will watch for changes in the app/javascript/packs/*.js files and automatically reload the browser to match.
+// live code reloading happens when you start the webpack development server, which will watch for changes in the app/javascript/packs/*.js files and automatically reload the browser to match.
 
 // If you want to use live code reloading, or you have enough JavaScript that on-demand compilation is too slow, you'll need to run ./bin/webpack-dev-server or ruby ./bin/webpack-dev-server. This process will watch for changes in the app/javascript/packs/*.js files and automatically reload the browser to match.
 // Once you start the webpack development server, Webpacker library will automatically start proxying all webpack asset requests to this webpack development server. When you stop the webpack development server, it'll revert back to on-demand compilation.
